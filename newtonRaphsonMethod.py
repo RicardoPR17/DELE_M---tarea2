@@ -1,16 +1,19 @@
 # Funcion a calcular sus raices
 def f(x):
-    return x**3 + 3
+    return x ** 3 + 3
+
 
 # Derivada de la funcion
 def fd(x):
-    return 3*x**2
+    return 3 * x ** 2
+
 
 # Metodo de NewtonRapson 1 - (f(x)/f'(x))
 def newtonRapson(n):
     num = f(n)
     den = fd(n)
-    return n - num/den
+    return n - num / den
+
 
 # Cantiadad de interaciones del metodo de Newton, con 11 iteraciones
 def iterations(n):
